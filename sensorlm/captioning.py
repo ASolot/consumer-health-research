@@ -8,7 +8,7 @@ import pandas as pd
 from scipy import signal as scipy_signal
 from scipy import stats as scipy_stats
 
-from constants import (
+from .constants import (
     low_level_templates, activity_templates, trend_templates, 
     anomaly_templates, mood_templates_with_time, 
     NORMALIZATION_PARAMETERS, FEATURES_TO_NORMALIZE, 

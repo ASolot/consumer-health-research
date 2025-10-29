@@ -1,4 +1,4 @@
-"""Constants for Sensor Data in SensorLM."""
+"""Constants and Templates for Sensor Data Captioning in SensorLM."""
 
 low_level_templates = [
     (
