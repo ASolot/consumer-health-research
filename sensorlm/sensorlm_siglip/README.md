@@ -32,7 +32,7 @@ git clone https://github.com/google-research/big_vision.git
 cd big_vision
 
 # Copy your patch files into the existing structure
-cp -r ../sensorlm_siglip/* .
+cp -r ../sensorlm_siglip/*  ./big_vision
 ```
 
 To train or evaluate the SigLIP–SensorLM model, use Big Vision’s standard launcher with the provided config.
