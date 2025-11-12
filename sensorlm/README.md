@@ -11,6 +11,11 @@ This repository contains [datasets](#datasets) and [reference code](#reference-c
 
 We present SensorLM, a family of sensor-language foundation models that enable wearable sensor data understanding with natural language. Despite its pervasive nature, aligning and interpreting sensor data with language remains challenging due to the lack of paired, richly annotated sensor-text descriptions in uncurated, real-world wearable data. We introduce a hierarchical caption generation pipeline designed to capture statistical, structural, and semantic information from sensor data. This approach enabled the curation of the largest sensor-language dataset to date, comprising over 59.7 million hours of data from more than 103,000 people. Furthermore, SensorLM extends prominent multimodal pretraining architectures (e.g., CLIP, CoCa) and recovers them as specific variants within a generic architecture. Extensive experiments on real-world tasks in human activity analysis and healthcare verify the superior performance of SensorLM over state-of-the-art in zero-shot recognition, few-shot learning, and cross-modal retrieval. SensorLM also demonstrates intriguing capabilities including scaling behaviors, label efficiency, sensor captioning, and zero-shot generalization to unseen tasks.
 
+## Reference Code Structure
+- `captioning.py`: Contains code for the hierarchical captioning pipeline.
+- `constants.py`: Contains pre-defined templates and constants used for preprocessing the data and generating the captions.
+- `sensorlm_siglip`: Contains the code for training the SigLIP variant of SensorLM models.
+
 ## Citing SensorLM
 
 If you use SensorLM datasets or code in your research, please cite the manuscript using:
