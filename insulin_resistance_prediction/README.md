@@ -69,7 +69,8 @@ by running `!pip install <package>` in a new cell.
 
 ## Contributing
 
-For details on contributing to this repository, please see [CONTRIBUTING.md](https://github.com/Google-Health/consumer-health-research/blob/main/CONTRIBUTING.md).
+Currently we do not accept external contributions to this repository. For more details, please see
+[CONTRIBUTING.md](https://github.com/Google-Health/consumer-health-research/tree/main/insulin_resistance_prediction/CONTRIBUTING.md).
 
 ## License
 
