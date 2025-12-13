@@ -7,9 +7,14 @@ manuscript "[Insulin Resistance Prediction From Wearables and Routine Blood Biom
 
 Insulin resistance, a precursor to type 2 diabetes, is characterized by impaired insulin action in tissues. Current methods for measuring insulin resistance, while effective, are expensive, inaccessible, not widely available and hinder opportunities for early intervention. In this study, we remotely recruited the largest dataset to date across the US to study insulin resistance (N=1,165 participants, with median BMI=28 kg/m2, age=45 years, HbA1c=5.4%), incorporating wearable device time series data and blood biomarkers, including the ground-truth measure of insulin resistance, homeostatic model assessment for insulin resistance (HOMA-IR). We developed deep neural network models to predict insulin resistance based on readily available digital and blood biomarkers. Our results show that our models can predict insulin resistance by combining both wearable data and readily available blood biomarkers better than either of the two data sources separately (R2=0.5, auROC=0.80, Sensitivity=76%, and specificity 84%). The model showed 93% sensitivity and 95% adjusted specificity in obese and sedentary participants, a subpopulation most vulnerable to developing type 2 diabetes and who could benefit most from early intervention. Rigorous evaluation of model performance, including interpretability, and robustness, facilitates generalizability across larger cohorts, which is demonstrated by reproducing the prediction performance on an independent validation cohort (N=72 participants). Additionally, we demonstrated how the predicted insulin resistance can be integrated into a large language model agent to help understand and contextualize HOMA-IR values, facilitating interpretation and safe personalized recommendations. This work offers the potential for early detection of people at risk of type 2 diabetes and thereby facilitate earlier implementation of preventative strategies.
 
+
 ## Datasets
 
-Datasets are provided in the `/data` folder. All files are provided in [parquet format](https://parquet.apache.org/) and are loaded as [pandas dataframes](https://pandas.pydata.org/docs/index.html). 
+### Data Availability
+
+The de-identified dataset used in this study is available to approved researchers for reproducibility purposes only. Researchers seeking dataset access must complete the Insulin Resistance Dataset Access Request Form, [available here](https://docs.google.com/forms/d/e/1FAIpQLSebcfCZMQKBua7QS9MSvqr9n-fqmfJvmU4blOHXP1WZC0NFqA/viewform?usp=preview).
+
+Aggregated data derived from the original de-identified dataset is provided in the `/data` folder. All files are provided in [parquet format](https://parquet.apache.org/) and are loaded as [pandas dataframes](https://pandas.pydata.org/docs/index.html). 
 
 ### ir_prediction_data.pq
 
@@ -52,6 +57,30 @@ The libraries used in the [mentioned colab notebooks](#reference-code-structure)
 
 In case of import failures, manually install the failing packages
 by running `!pip install <package>` in a new cell.
+
+If running the provided code using other environments, please use the following package versions:
+
+  - altair: 5.5.0
+  - bokeh: 3.7.3
+  - matplotlib: 3.10.0
+  - numpy: 2.0.2
+  - pickle: file version 4.0
+  - pandas: 2.2.2
+  - pytz: 2025.2
+  - pytorch: 
+  - re: 2.2.1
+  - scipy: 1.16.3
+  - seaborn: 0.13.2
+  - statsmodels: 0.14.6
+  - sklearn: 1.6.1
+  - torch: 2.9.0+cpu
+  - tqdm: 4.67.1
+  - IPython: 7.34.0
+  - shap: 0.50.0
+  - xgboost: 3.1.2
+  - json: 2.0.9
+  - tensorflow: 2.19.0
+  - umap: 0.5.9.post2
 
 ## Citing this paper
 
